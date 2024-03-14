@@ -545,24 +545,31 @@ margin: 0;
 }
 
 /*gallery*/
+
 .gallery {
-width: 1170px;
-margin: 0 auto;
 margin-bottom: 120px;
+}
+
+.title-gallery {
+margin: 0;
+margin-bottom: 55px;
+font-size: 24px;
+line-height: 34px;
+text-align: center;
+text-decoration: underline;
+text-decoration-color: #00c6bd;
+text-decoration-thickness: 2px;
+text-underline-offset: 15px;
+text-underline-position: under;
 }
 
 .container-gallery{
 display: flex;
-}
-
-.title-gallery {
-text-align: center;
-margin-bottom: 55px;
+align-items: flex-start;
 }
 
 .gallery-img {
 width: 970px;
-display: block;
 margin-right: 30px;
 }
 
@@ -570,23 +577,23 @@ margin-right: 30px;
 list-style: none;
 margin: 0;
 padding: 0;
+width: 170px;
 }
 
 .preview-list li {
 margin-bottom: 30px;
-width: 170px;
 }
 
 .preview-list li:last-child {
 margin-bottom: 0;
 }
 
-.preview-list a {
+.preview-list-item {
 position: relative;
-display: block;
+/* display: block; */
 }
 
-.preview-list a::before {
+.preview-list-item a:not(.active)::before {
 content: "";
 position: absolute;
 top: 0;
@@ -596,7 +603,7 @@ right: 0;
 background-color: rgba(253, 253, 255, 0.5);
 }
 
-.preview-list a.active-item::before {
+.preview-list a.active::before {
   background-color: transparent;
 }
 
@@ -613,8 +620,16 @@ line-height: 26px;
 }
 
 .title-news {
-text-align: center;
+margin: 0;
 margin-bottom: 55px;
+font-size: 24px;
+line-height: 34px;
+text-align: center;
+text-decoration: underline;
+text-decoration-color: #00c6bd;
+text-decoration-thickness: 2px;
+text-underline-offset: 15px;
+text-underline-position: under;
 }
 
 figure {
@@ -737,12 +752,25 @@ opacity: 0.3;
 }
 
 /*contacts*/
+
 .contacts {
 display: flex;
 flex-direction: row-reverse;
 width: 1010px;
 justify-content: space-between;
 margin: 0;
+}
+
+.contacts h2 {
+margin: 0;
+margin-bottom: 35px;
+font-size: 24px;
+line-height: 34px;
+text-decoration: underline;
+text-decoration-color: #00c6bd;
+text-decoration-thickness: 2px;
+text-underline-offset: 15px;
+text-underline-position: under;
 }
 
 .contact-container {
@@ -756,8 +784,6 @@ padding: 0;
 }
 
 .contact-item {
-/*list-style: none;
-padding: 0;*/
 margin: 0;
 font-size: 16px;
 line-height: 22px;
