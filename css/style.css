@@ -500,6 +500,50 @@ font-size: 18px;
 font-weight: 700;
 }
 
+/* Вертикальная раскладка карточек */
+
+.rent-price.list {
+flex-direction: column;
+}
+
+.rent-price.list .price-item {
+display: flex;
+width: 1110px;
+margin: 0;
+margin-bottom: 30px;
+}
+
+.rent-price.list .price-img {
+width: 340px;
+height: 211px;
+margin: 0;
+margin-right: 30px;
+object-fit: fill;
+}
+
+.rent-price.list .yacht-name {
+margin: 0;
+margin-bottom: 10px;
+}
+
+.rent-price.list .description {
+margin: 0;
+margin-left: 18px;
+}
+
+.rent-price.list .card-content {
+margin-right: auto;
+max-width: 345px;
+}
+
+.rent-price.list .card-price {
+margin: 0;
+}
+
+.rent-price.list .card-price-name {
+  display: none;
+}
+
 /*gallery*/
 .gallery {
 width: 1170px;
