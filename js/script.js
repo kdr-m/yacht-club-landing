@@ -2,7 +2,7 @@ let darkThemeButton = document.querySelector('.theme-button-dark');
 let lightThemeButton = document.querySelector('.theme-button-light');
 let sansSerifFontButton = document.querySelector('.font-button-sans-serif');
 let serifFontButton = document.querySelector('.font-button-serif');
-let articleSection = document.querySelector('.club-article.short')
+let articleSections = document.querySelectorAll('.blog-article.short');
 
 darkThemeButton.onclick = function () {
     document.body.classList.add('dark');
@@ -28,7 +28,7 @@ sansSerifFontButton.onclick = function () {
    serifFontButton.classList.remove('active');
 };
 
-for (let articleSection of articleSection) {
+for (let articleSection of articleSections) {
     let moreButton = articleSection.querySelector('.more');
     moreButton.onclick = function () {
         articleSection.classList.remove('short');

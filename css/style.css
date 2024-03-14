@@ -265,37 +265,46 @@ width: 1170px;
 margin-bottom: 120px;
 }
 
-.club-article {
+/*club-artcle*/
+
+.blog-article {
 display: flex;
 width: 1030px;
 margin: 0 auto;
 justify-content: space-between;
 }
 
-.club-article-1{
+.blog-article-content {
+width: 400px;
+}
+
+.blog-article-img {
+  width: 600px;
+  }
+
+.blog-article-1 {
 margin-bottom: 100px;
 }
 
-.club-article-2{
+.blog-article-1 .blog-article-content {
+  margin-right: 30px;
+}
+
+.blog-article-2 {
 margin-bottom: 120px;
 flex-direction: row-reverse;
 }
 
-.article-content {
-width: 400px;
-}
-
-.content-2{
+.blog-article-2 .blog-article-content {
 text-align: right;
 }
 
-.blog-article-date {
-text-transform: uppercase;
-margin-bottom: 10px;
+.blog-article-2 .blog-article-img {
+  margin-right: 30px;
 }
 
-/*.article-content*/ 
-h2 {
+/*.blog-article-content*/ 
+.blog-article h2 {
 font-size: 24px;
 line-height: 34px;
 font-weight: 700;
@@ -308,15 +317,17 @@ margin-top: 0;
 margin-bottom: 35px;
 }
 
-.article-content p{
-font-size: 16px;
-line-height: 24px;
+.blog-article-date {
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 10px;
+font-size: 14px;
+line-height: 18px;
 }
 
-.club-article.short .blog-article-description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.blog-article-description {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .more {
@@ -345,19 +356,15 @@ line-height: 24px;
 
 /* Сокращенное отображение статьи */
 
-.club-article.short .blog-article-description {
+.blog-article.short .blog-article-description {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.club-article.short .more {
+.blog-article.short .more {
   /* Показываем элемент в свернутой статье */
   display: inline-block;
-}
-
-.article-img {
-width: 600px;
 }
 
 /*price*/
@@ -365,7 +372,7 @@ width: 600px;
 margin-bottom: 120px;
 }
 
-.price-header {
+.price header {
 margin-bottom: 45px;
 display: flex;
 justify-content: space-between;
@@ -373,7 +380,13 @@ justify-content: space-between;
 
 .price h2 {
 margin: 0;
-
+font-size: 24px;
+line-height: 34px;
+text-decoration: underline;
+text-decoration-color: #00c6bd;
+text-decoration-thickness: 2px;
+text-underline-offset: 15px;
+text-underline-position: under;
 }
 
 .card-view-buttons {
