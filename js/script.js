@@ -53,17 +53,16 @@ listViewButton.onclick = function () {
 };
 
 let mainImage = document.querySelector('.gallery-img');
-let previews = document.querySelector('.preview-list-item a');
+let previews = document.querySelectorAll('.preview-list-item a');
 
 for (let activeImage of previews) {
-activeImage.onclick = function (evt) {
-    evt.preventDefault();
-    mainImage.src = activeImage.href;
-
-    let currentActive = document.querySelector('.preview-list-item .active');
-    currentActive.classList.remove('active');
-    activeImage.classList.add('active');
-};
+    activeImage.onclick = function (evt) {
+        evt.preventDefault();
+        mainImage.src = activeImage.href;
+        let currentActive = document.querySelector('.preview-list-item.active');
+        currentActive.classList.remove('active');
+        activeImage.classList.add('active');
+    };
 };
 
 

@@ -590,17 +590,17 @@ margin-bottom: 0;
 
 .preview-list-item {
 position: relative;
-/* display: block; */
+display: block;
 }
 
-.preview-list-item a:not(.active)::before {
+.preview-list-item a::before {
 content: "";
 position: absolute;
 top: 0;
 bottom: 0;
 left: 0;
 right: 0;
-background-color: rgba(253, 253, 255, 0.5);
+background-color: rgba(255, 255, 255, 0.5);
 }
 
 .preview-list a.active::before {
@@ -609,6 +609,7 @@ background-color: rgba(253, 253, 255, 0.5);
 
 .preview-list img {
 display: block;
+cursor: pointer;
 }
 
 /*news*/
